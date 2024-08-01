@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+     <div class="overbody-container">
+       
+         <div class="image-container">
+            <img id="car" src="background2.jpg" alt="car">
+            <div class="image-overlay"><img id="logo" src="toyota.png" alt="logo"></div>
+            <div class="image-footer">A car photo by someone</div>
+             </div>
+         
+         <div class="body-container">
+            <div class="header"></div>
+            <div class="info-container"><h1>
+                Enter your data if u want a <i>car</i>.
+                If the <i>car</i> isn't interesting for you,
+                enter your contact information anyway.
+            <p> Do it <i>now</i>!</p>
+            </h1></div>
+            <div class="form-container">
+                <div class="form-header"><h2>Fill out the form, now!</h2></div>
+                <div class="form-rows">
+                    <form action="" method="">
+                        <div class="row">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <label for="user_name">FIRST NAME</label>
+                                    </li>
+                                    <li>
+                                        <input 
+                                        type="text" 
+                                        id="user_name" 
+                                        name="name" 
+                                        placeholder="Jeff" 
+                                        minlength="2" 
+                                        maxlength="12"
+                                        pattern="[a-zA-Z]*"
+                                        required />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <label for="user_surname">LAST NAME</label>
+                                    </li>
+                                    <li>
+                                        <input 
+                                        type="text" 
+                                        id="user_surname" 
+                                        name="surname" 
+                                        placeholder="Doe"
+                                        minlength="2" 
+                                        maxlength="32"
+                                        pattern="[a-zA-Z]*"
+                                        required />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <label for="user_email">EMAIL</label>
+                                    </li>
+                                    <li>
+                                        <input 
+                                        type="email" 
+                                        id="user_email" 
+                                        name="email" 
+                                        placeholder="jeff@email.com" 
+                                        minlength="8"
+                                        required />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <label for="user_tel">PHONE NUMBER</label>
+                                    </li>
+                                    <li>
+                                        <input 
+                                        type="tel" 
+                                        id="user_tel" 
+                                        name="telnumber"
+                                        pattern="[0-9]*"
+                                        placeholder="123456789"
+                                        minlength="9"
+                                        required />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <label for="user_password">PASSWORD</label>
+                                    </li>
+                                    <li>
+                                        <input 
+                                        type="password" 
+                                        id="user_password" 
+                                        name="password" 
+                                        required />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <label for="user_password">CONFIRM PASSWORD</label>
+                                    </li>
+                                    <li>
+                                        <input 
+                                        type="password" 
+                                        id="user_password" 
+                                        name="password" 
+                                        required />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="submit-container">
+                <button type="submit">Create Account</button>
+                </form>
+                <p><h3>Already have an account? <a href="">Log in</a></h3></p>
+            </div>
+            <div class="footer"></div>
+         </div>
+     </div>
+</body>
+</html>
