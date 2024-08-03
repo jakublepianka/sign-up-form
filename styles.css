@@ -170,7 +170,7 @@ textarea {
   /* font-family: inherit; 1 */
   font-size: 120%; /* 1 */
   line-height: 1.15; /* 1 */
-  margin: 1px 0 12px 0; /* 2 */
+  margin: 1px 0 4px 0;
   padding: 4px;
   border-radius: 8px;
   border: 2px solid #c4c4c4;
@@ -481,27 +481,15 @@ form {
   flex-wrap: wrap;
 }
 
-
-input:focus {
-  outline: none;
-  border: 2px solid #7da0ff;
-  background-color: #edf2ff;
-}
-
-input:valid {
-  border: 2px solid #0fe032;
-  background-color: rgb(239, 255, 240);
-}
-
-input:invalid {
-  border: 2px solid #ec0c0c;
-  background-color: rgb(255, 235, 235);
-}
-
 ul {
   margin: 0 32px 12px 0;
   padding: 0;
   list-style: none;
+}
+
+li {
+  display:flex;
+  flex-direction: column;
 }
 
 .submit-container {
@@ -525,4 +513,28 @@ ul {
 a {
   color:#0c9924;
   text-decoration: none;
+}
+
+/* <--- form validation ---> */
+
+span {
+  margin: 0 0 0 6px;
+  padding: 0;
+  color:#ff0505;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #7da0ff;
+  background-color: #edf2ff;
+}
+
+input:valid {
+  border: 2px solid #0fe032;
+  background-color: rgb(239, 255, 240);
+}
+
+input:invalid {
+  border: 2px solid #ec0c0c;
+  background-color: rgb(255, 235, 235);
 }

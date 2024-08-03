@@ -1,5 +1,4 @@
 const form = document.querySelector("form");
-const input = document.querySelectorAll("input");
 const name = document.getElementById("user_name");
 const surname = document.getElementById("user_surname");
 const email = document.getElementById("user_email");
