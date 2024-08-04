@@ -184,6 +184,7 @@ textarea {
 button,
 input { /* 1 */
   overflow: visible;
+  outline: none;
 }
 
 /**
@@ -529,12 +530,12 @@ input:focus {
   background-color: #edf2ff;
 }
 
-input:valid {
+input:not(:focus:invalid):valid {
   border: 2px solid #0fe032;
   background-color: rgb(239, 255, 240);
 }
 
-input:invalid {
+input:not(.unfilled, :focus):invalid {
   border: 2px solid #ec0c0c;
   background-color: rgb(255, 235, 235);
 }
