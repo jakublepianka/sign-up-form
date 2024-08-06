@@ -170,7 +170,7 @@ textarea {
   /* font-family: inherit; 1 */
   font-size: 120%; /* 1 */
   line-height: 1.15; /* 1 */
-  margin: 1px 0 4px 0;
+  margin: 1px 0 2px 0;
   padding: 4px;
   border-radius: 8px;
   border: 2px solid #c4c4c4;
@@ -519,9 +519,10 @@ a {
 /* <--- form validation ---> */
 
 span {
-  margin: 0 0 0 6px;
+  margin: 0 0 0 4px;
   padding: 0;
   color:#ff0505;
+  max-width: 199px;
 }
 
 input:focus {
